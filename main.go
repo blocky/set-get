@@ -25,7 +25,6 @@ func main() {
 	config, err := ReadConfig()
 	if err != nil {
 		log.Fatalf("Error reading config: %v", err)
-		return
 	}
 	rdb := NewRedisClient(config.RedisAddress, config.RedisPassword, config.RedisDatabase)
 
