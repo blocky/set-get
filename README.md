@@ -1,4 +1,4 @@
-# Gateway
+# Set-Get
 A small go http server for setting and getting key value pairs
 
 # Dependencies
