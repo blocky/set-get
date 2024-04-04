@@ -8,5 +8,5 @@ import (
 )
 
 func Build() {
-	sh.Run("go", "build", "-o", "./bin/gateway", ".")
+	sh.Run("go", "build", "-o", "./dist/gateway", ".")
 }
