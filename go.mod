@@ -3,10 +3,9 @@ module bky.sh/gateway
 go 1.22.1
 
 require (
-	github.com/go-playground/validator v9.31.0+incompatible
 	github.com/magefile/mage v1.15.0
-	github.com/pelletier/go-toml/v2 v2.1.0
 	github.com/redis/go-redis/v9 v9.5.1
+	gopkg.in/go-playground/validator.v9 v9.31.0
 )
 
 require (
@@ -18,5 +17,4 @@ require (
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
-	gopkg.in/go-playground/validator.v9 v9.31.0 // indirect
 )
