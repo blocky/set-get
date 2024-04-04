@@ -6,6 +6,6 @@ for arch in "${archs[@]}"
 do
   for os in "${oss[@]}"
   do
-    env GOOS="${os}" GOARCH="${arch}" go build -o ./dist/gateway-"${os}"-"${arch}"
+    env GOOS="${os}" GOARCH="${arch}" go build -o ./dist/set-get-"${os}"-"${arch}"
   done
 done
