@@ -15,9 +15,11 @@ The program `mage` is used for build tasks (installation instructions
 
 ### Redis
 
-This project uses Redis for storing key value pairs. You can install Redis
-however you like. If you have docker installed, you can run the following
-command to start a Redis container:
+This project uses Redis for storing key value pairs (installation instructions
+[here](https://redis.io/docs/install/install-redis/)).
+
+If you have docker installed, you can run the following command to start a Redis
+container:
 
 ```bash
 docker run --name blocky-redis-dev -p 6379:6379 -d redis
@@ -43,16 +45,19 @@ The server will start on port 8080.
 
 # Binaries
 
-To build the executable, run the following command
-(replace 'linux' and 'amd64' with your desired OS and architecture):
+To build the executable, run the following command:
+```bash
+mage build
+```
+If you wish to cross compile, you can specify your desired OS and architecture:
 ```bash
 GOOS=linux GOARCH=amd64 mage build
 ```
 For available OS and architecture options, see
 [here](https://golang.org/doc/install/source#environment)
 
-Alternatively, you can run the following command, which depends only on golang,
-and cross compiles a number of binaries:
+Alternatively, you can run the following command to cross compiles a number of
+binaries:
 ```bash
 mage buildAll
 ```
